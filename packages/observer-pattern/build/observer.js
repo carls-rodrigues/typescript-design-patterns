@@ -9,7 +9,7 @@ var WeatherStation = /** @class */ (function () {
         this.observers = [];
     }
     WeatherStation.prototype.setTemparature = function (temp) {
-        console.log("WeatherStation: new temperature measurement: " + chalk_1.default.green(temp));
+        console.log(chalk_1.default.blue('WeatherStation: new temperature measurement:') + " " + chalk_1.default.green(temp));
         this.temparature = temp;
         this.notifyObservers();
     };
@@ -34,7 +34,7 @@ var TemperatureDisplay = /** @class */ (function () {
         weatherStation.registerObserver(this);
     }
     TemperatureDisplay.prototype.update = function (temperature) {
-        console.log("TemperatureDisplay: I need to update my display");
+        console.log(chalk_1.default.red("TemperatureDisplay: I need to update my display"));
     };
     return TemperatureDisplay;
 }());
@@ -45,10 +45,10 @@ var Fan = /** @class */ (function () {
     }
     Fan.prototype.update = function (temperature) {
         if (temperature > 25) {
-            console.log('Fan: its hot here, turning myself on...');
+            console.log(chalk_1.default.magenta('Fan: its hot here, turning myself on...'));
         }
         else {
-            console.log('Fan: its nice and cool, turning myself off...');
+            console.log(chalk_1.default.magenta('Fan: its nice and cool, turning myself off...'));
         }
     };
     return Fan;

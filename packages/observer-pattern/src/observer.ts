@@ -15,7 +15,9 @@ class WeatherStation implements Subject {
 
   setTemparature(temp: number) {
     console.log(
-      `WeatherStation: new temperature measurement: ${chalk.green(temp)}`
+      `${chalk.blue(
+        'WeatherStation: new temperature measurement:'
+      )} ${chalk.green(temp)}`
     );
     this.temparature = temp;
     this.notifyObservers();
@@ -42,7 +44,7 @@ class TemperatureDisplay implements Observer {
   }
 
   update(temperature: number): void {
-    console.log(`TemperatureDisplay: I need to update my display`);
+    console.log(chalk.red(`TemperatureDisplay: I need to update my display`));
   }
 }
 
@@ -55,9 +57,11 @@ class Fan implements Observer {
 
   update(temperature: number): void {
     if (temperature > 25) {
-      console.log('Fan: its hot here, turning myself on...');
+      console.log(chalk.magenta('Fan: its hot here, turning myself on...'));
     } else {
-      console.log('Fan: its nice and cool, turning myself off...');
+      console.log(
+        chalk.magenta('Fan: its nice and cool, turning myself off...')
+      );
     }
   }
 }
