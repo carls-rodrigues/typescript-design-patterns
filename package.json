@@ -4,5 +4,14 @@
   "main": "index.js",
   "repository": "https://github.com/carls-rodrigues/typescript-design-patterns.git",
   "author": "almakad <carls-f@live.com>",
+  "scripts": {
+    "observer": "yarn workspace @typescript-design-patterns/observer start"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "license": "MIT"
+
+  
 }
