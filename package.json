@@ -1,0 +1,8 @@
+{
+  "name": "typescript-design-patterns",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/carls-rodrigues/typescript-design-patterns.git",
+  "author": "almakad <carls-f@live.com>",
+  "license": "MIT"
+}
