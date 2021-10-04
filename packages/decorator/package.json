@@ -1,11 +1,11 @@
 {
-  "name": "@typescript-design-patterns/observer",
+  "name": "@typescript-design-patterns/decorator",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "rimraf build && tsc",
-    "start": "yarn build && node ./build/observer.js"
+    "start": "yarn build && node ./build/decorator.js"
   },
   "devDependencies": {
     "ts-node-dev": "^1.1.8",

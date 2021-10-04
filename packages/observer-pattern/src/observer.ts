@@ -68,8 +68,5 @@ class Fan implements Observer {
 
 let weatherStation = new WeatherStation();
 
-let tempDisplay = new TemperatureDisplay(weatherStation);
-let fan = new Fan(weatherStation);
-
 weatherStation.setTemparature(20);
 weatherStation.setTemparature(30);
