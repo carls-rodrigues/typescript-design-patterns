@@ -5,7 +5,8 @@
   "repository": "https://github.com/carls-rodrigues/typescript-design-patterns.git",
   "author": "almakad <carls-f@live.com>",
   "scripts": {
-    "observer": "yarn workspace @typescript-design-patterns/observer start"
+    "observer": "yarn workspace @typescript-design-patterns/observer start",
+    "singleton": "yarn workspace @typescript-design-patterns/singleton dev"
   },
   "private": true,
   "workspaces": [
