@@ -1,0 +1,19 @@
+{
+  "name": "@typescript-design-patterns/project-analytics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf build && tsc",
+    "start": "yarn build && node ./build/analytics.js",
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+  }
+}
